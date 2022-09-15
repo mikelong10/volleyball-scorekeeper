@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Score Keeper</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="side">
+      <div class="score">
+        <button class="digit home">0</button>
+        <button class="digit home">0</button>
+      </div>
+      <div>
+        <h1>HOME</h1>
+      </div>
+    </div>
+    <div class="middle">
+      <button id="set">1</button>
+      <h2>SET</h2>
+      <h3>GAME TO</h3>
+      <select name="target-score" id="target">
+        <option value="5">5</option>
+        <option value="7">7</option>
+        <option value="11">11</option>
+        <option value="15">15</option>
+        <option value="21">21</option>
+        <option value="25" selected>25</option>
+      </select>
+      <button id="reset">RESET</button>
+    </div>
+    <div class="side">
+      <div class="score">
+        <button class="digit away">0</button>
+        <button class="digit away">0</button>
+      </div>
+      <div>
+        <h1>AWAY</h1>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
