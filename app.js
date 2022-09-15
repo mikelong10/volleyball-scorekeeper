@@ -22,8 +22,10 @@ function updateScore(flip, player, opponent) {
     player.left.innerHTML = parseInt(player.left.innerHTML) + 1;
     flip.innerHTML = 0;
   }
-  if (parseInt(player.left.innerHTML + player.right.innerHTML)
-    === parseInt(targetScore.value)) {
+  let playerScore = parseInt(player.left.innerHTML + player.right.innerHTML);
+  let opponentScore = parseInt(opponent.left.innerHTML + opponent.right.innerHTML);
+  if (playerScore >= parseInt(targetScore.value)
+    && (playerScore - opponentScore >= 2)) {
     for (let flip of Object.values(player)) {
       flip.style.backgroundColor = "#38ae38";
     }
