@@ -6,6 +6,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 1200px;
+  background-color: #f7eded;
   margin: 0;
 }
 
@@ -44,7 +46,7 @@ button:hover {
   width: 50%;
   height: 70vh;
   color: white;
-  font-size: 50vh;
+  font-size: 360px;
   border-radius: 10px;
   border: none;
   margin: 0 5px;
